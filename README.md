@@ -1,2 +1,6 @@
 # roman_empire_provinces
-Roman Provinces (lines and polygons) from the start of the Republic to the conquest of Mesopotamia by Septimius Severus. 
+Roman provinces (lines and polygons) from the beginning of the Republic to Septimius Severus’s conquest of Mesopotamia, designed for use in QGIS.
+Both the “provincias_romanas_l” and “provincias_romanas_p” files follow the same format, with periods divided chronologically for both the Republic and the Principate. Each is further subdivided into smaller periods for the Republic and into dynasties for the Principate. The idea is to activate the same periods in each layer so that they align chronologically. 
+For some provinces, such as Alpes Graiae et Alpes Poeninae, the dates of establishment are disputed. When these dates differ significantly, one has been chosen, since a specific date is required for the province to appear in at least one of the subperiods. 
+To define the boundaries of each province, we have followed mountain ridges and watershed divides, and we have checked each Roman city of the period one by one to place them correctly within their respective provinces. In some cases, it is impossible to know the exact course of the provincial border, so we have opted to ensure that the Roman cities fall within their corresponding provinces.
+To the best of our knowledge, this is the most accurate provincial division currently available for this period, but any corrections are more than welcome. 
