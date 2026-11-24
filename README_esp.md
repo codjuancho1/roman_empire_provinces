@@ -1,19 +1,37 @@
 #Roman-Empire-Datasets-GIS
+
     • roman _provinces_l y roman_provinces_p:
+    
           Divisiones provinciales romanas (representadas mediante líneas y polígonos), que abarcan desde los inicios de la República hasta la conquista de Mesopotamia bajo Septimio Severo. Tanto los archivos “roman_provinces_l” (líneas) como “roman_provinces_p” (polígonos) siguen el mismo formato, con divisiones cronológicas que comprenden tanto la República como el Principado. Cada etapa se subdivide, a su vez, en periodos más breves (para la República) o en dinastías (para el Principado). El objetivo es que los periodos correspondientes en ambas capas puedan activarse simultáneamente, garantizando así su alineación cronológica. En el caso de ciertas provincias —como los Alpes Grayos (Alpes Graiae) y los Alpes Peninos (Alpes Poeninae)—, las fechas de su creación son objeto de debate. Ante discrepancias significativas, se ha optado por una fecha concreta, ya que resulta necesario establecer un momento preciso para que la provincia aparezca, al menos, en uno de los subperiodos. Para definir los límites de cada provincia, se han tomado como referencia cadenas montañosas, cuencas hidrográficas y cursos fluviales. Las capas empleadas para esta delimitación incluyen «World Hillshade» de Esri (accesible directamente desde QGIS) y el conjunto de datos de Copernicus titulado «EU-Hydro River Network Database 2006-2012 (vector), Europe» (fácilmente localizable mediante una búsqueda en línea). Asimismo, se ha verificado individualmente la ubicación de las ciudades romanas de la época para asegurar que se encuentren dentro de sus respectivas provincias; un paso especialmente relevante para aquellas ciudades situadas cerca de las fronteras. Dado que, en ocasiones, resulta imposible determinar el trazado exacto de un límite provincial, se ha priorizado garantizar que las ciudades romanas queden incluidas dentro de la provincia que les corresponde. En la tabla de atributos de la capa de polígonos “roman_provinces_p” se incluyen varias columnas:
+          
             ▪ “fid”: Columna que contiene un número de identificación único para cada elemento espacial, asignado automáticamente por QGIS.
+            
             ▪ “latin” Nombre en latín de la provincia en cuestión.
+            
             ▪ “castellano”: Nombre en español de la provincia en cuestión.
+            
             ▪ “creation”: Campo de texto que indica los años durante los cuales se creó la provincia. Esto sirve únicamente como referencia; al tratarse de un campo de tipo cadena de texto, no puede utilizarse para realizar cálculos.
+            
             ▪ “creation_start”: el año en que se inició la creación de la provincia. En la mayoría de los casos, este coincide con el año que aparece en el campo siguiente.
+            
             ▪ “creation_end”: el año en que se completó la creación de la provincia, o el año a partir del cual existen pruebas definitivas de su existencia.
+            
           Por ejemplo, para la provincia de «Epirus», el campo “creation_start” indica el año 103 (103 d. C.) y el campo “creation_end” el año 114 (114 d. C.); aunque se desconoce la fecha exacta de su creación, se sabe que esta tuvo lugar dentro de dicho intervalo temporal.
+          
           El estilo de visualización está estructurado de tal manera que las provincias creadas mediante la división de otras anteriores —por ejemplo, Panonia Inferior y Panonia Superior, formadas al dividir el territorio de la provincia de Panonia (donde la suma de los límites de las dos nuevas provincias coincide con los de la provincia original, antes de su división)— se superponen a las provincias previas. Esto evita la duplicación innecesaria de objetos espaciales, al tiempo que preserva las fechas de creación específicas de cada provincia.
+          
           El archivo denominado “roman_provinces_l” sigue la misma lógica. No obstante, en este caso, los nombres no hacen referencia a una única provincia, sino a las dos provincias separadas por un segmento lineal concreto (por ejemplo, Galia Lugdunense/Galia Narbonense). Por último, cabe señalar que lo más recomendable es combinar estos límites provinciales con las capas de ciudades proporcionadas por el Ancient World Mapping Center (AWMC) de la Universidad de Carolina del Norte, así como con el extraordinario trabajo de cartografía de las calzadas romanas realizado por el proyecto Itiner-e.org. Ambas fuentes ofrecen sus datos de forma abierta y gratuita a través de sus respectivos sitios web. En particular, la capa titulada “coastline” que proporciona el AWMC la hemos utilizado para establecer los límites costeros de los polígonos provinciales. Asimismo, destaca la excelente cartografía de calzadas y asentamientos romanos elaborada por el proyecto Digital Britannia, que también ofrece acceso abierto a sus datos.
+          
           Hasta donde sabemos, esta es la división provincial más precisa disponible actualmente para este periodo; no obstante, cualquier corrección será bienvenida. Estamos, por supuesto, profundamente agradecidos por el inmenso esfuerzo colectivo de los cartógrafos, historiadores y entusiastas de la historia romana que han hecho posible precisar estos límites provinciales con tal nivel de detalle. En la medida en que el tiempo lo permita, tenemos previsto elaborar gradualmente un archivo independiente —a modo de guía o nota informativa— que contenga la bibliografía completa utilizada durante la creación de estos conjuntos de datos.
+          
     • “rhine_danube_limes”: 
+    
           Capa de puntos que muestra bases legionarias, capitales de civitas, algunas ciudades (colonias y municipia), fuertes auxiliares y fuertes navales en el limes romano desde la desembocadura del Danubio a la desembocadura del Rin. Los objetos espaciales están ordenados en varios campos: en función del tipo de asentamiento, “asentamiento”, “base legionaria”, “capital de civitas”, “ciudad (colonia/municipium), “fuerte auxiliar” y “fuerte naval”; y en función de la época, desde Augusto-Tiberio hasta la Antigüedad tardía. La capa viene con un estilo ya incluido en el que se clasifican los fuertes auxiliares, las bases legionarias y los fuertes navales en función de su época. En este estilo, las ciudades y capitales de civitas no están incluidas, pero añadiendo un par de reglas se mostrarán sin problema. También hay campos con el nombre en latín (“Romano”, “Roman”) y el nombre moderno (“Actual”, “Modern”). 
+          
     • “pannonia_wetlands”: representación vectorial de las zonas inundables y mayormente inundadas de la llanura panónica previamente a los trabajos hidrológicos del siglo XX. La fuente de esta capa está indicada en el archivo de bibliografía. 
+    
     • “germania_wetlands”: representación vectorial de las zonas de brezales y zonas pantanosas de Alemania noroccidental y de la zona de la desembocadura del Rin y el Mosa. La fuente de esta capa está indicada en el archivo de bibliografía. 
+    
     • “litus_saxonicum”: capa que representa las diferentes localidades y fuertes que formaban parte del sistema defensivo costero conocido como Litus Saxonicum. 
+    
 Tenemos la idea de actualizar periódicamente este geopackage para ir añadiendo cada vez más aspectos históricos. Los cambios y actualizaciones se explicarán en un log actualizado según se vayan añadiendo más cosas.
