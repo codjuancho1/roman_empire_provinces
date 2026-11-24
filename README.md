@@ -32,4 +32,4 @@ A point layer showing legionary bases, *civitas* capitals, various cities (*colo
 
 • “litus_saxonicum”: A layer representing the various locations and forts that comprised the coastal defensive system known as the *Litus Saxonicum*.
 
-We intend to periodically update this GeoPackage, incorporating an increasing number of historical features—such as marshlands, coastlines, and more. Changes and updates will be documented in a log, which will be updated as new elements are added.
+We intend to periodically update this GeoPackage, incorporating an increasing number of historical features. Changes and updates will be documented in a log, which will be updated as new elements are added.
