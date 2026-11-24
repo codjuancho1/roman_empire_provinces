@@ -1,8 +1,9 @@
-#Roman_Empire_Provinces_GIS
+#Roman-Empire-Datasets
 
 Roman provincial divisions (represented as lines and polygons), spanning from the early Republic to the conquest of Mesopotamia under Septimius Severus; the dataset is optimized for use in QGIS as a GeoPackage. Both the "roman_provinces_l" (lines) and "roman_provinces_p" (polygons) files follow the same format, with chronological divisions covering both the Republic and the Principate. Each stage is further subdivided into shorter periods (for the Republic) or dynasties (for the Principate). The design allows corresponding periods in both layers to be activated simultaneously, ensuring chronological alignment. For certain provinces—such as the *Alpes Graiae* and *Alpes Poeninae*—the dates of their creation are a subject of debate. In cases of significant discrepancy, a specific date has been selected, as it is necessary to establish a precise moment for the province to appear in at least one of the sub-periods. Mountain ranges, watersheds, and river courses served as references for defining the boundaries of each province. The layers used for this delimitation include Esri’s "World Hillshade" (accessible directly within QGIS) and the Copernicus dataset titled "EU-Hydro River Network Database 2006–2012 (vector), Europe" (easily found via an online search). Furthermore, the locations of Roman cities from the period have been individually verified to ensure they fall within their respective provinces—a step that is particularly important for cities situated near borders. Given that it is sometimes impossible to determine the exact boundary of a Roman province, the priority has been to ensure that Roman cities are included within their corresponding province. The attribute table for the "roman_provinces_p" polygon layer contains several columns:
 
 • “fid”: A column containing a unique identification number for each spatial feature, assigned automatically by QGIS.
+
 • “latin”: The Latin name of the province in question.
 
 • “castellano”: The Spanish name of the province in question.
