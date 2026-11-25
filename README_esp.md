@@ -29,6 +29,6 @@ Hasta donde sabemos, esta es la división provincial más precisa disponible act
 
 • “germania_wetlands”: representación vectorial de las zonas de brezales y zonas pantanosas de Alemania noroccidental y de la zona de la desembocadura del Rin y el Mosa. La fuente de esta capa está indicada en el archivo de bibliografía. 
 
-• “litus_saxonicum”: capa que representa las diferentes localidades y fuertes que formaban parte del sistema defensivo costero conocido como Litus Saxonicum. 
+• “litus_saxonicum”: capa que representa las diferentes localidades y fuertes que formaban parte del sistema defensivo costero conocido como Litus Saxonicum. En el campo "notitia" se indican aquellos lugares nombrados en la Notitia Dignitatum (con valor de "1") y otros lugares fortificados que no se nombran explícitamente en la Notitia pero que formaban parte del sistema defensivo costero (con valor de "2").
     
 Tenemos la idea de actualizar periódicamente este geopackage para ir añadiendo cada vez más aspectos históricos. Los cambios y actualizaciones se explicarán en un log actualizado según se vayan añadiendo más cosas.
