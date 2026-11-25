@@ -30,6 +30,6 @@ To the best of our knowledge, this is the most accurate provincial division curr
 
 • “germania_wetlands”: A vector representation of the heathlands and marshy areas in northwestern Germany, as well as the region surrounding the mouths of the Rhine and Meuse rivers. The source for this layer is provided in the bibliography file. 
 
-• “litus_saxonicum”: A layer representing the various locations and forts that comprised the coastal defensive system known as the *Litus Saxonicum*.
+• “litus_saxonicum”: A layer representing the various locations and forts that comprised the coastal defensive system known as the *Litus Saxonicum*. The "notitia" field identifies sites mentioned in the *Notitia Dignitatum* (assigned a value of "1") as well as other fortified locations that are not explicitly named in the *Notitia* but were nonetheless part of the coastal defensive system (assigned a value of "2").
 
 We intend to periodically update this GeoPackage, incorporating an increasing number of historical features. Changes and updates will be documented in a log, which will be updated as new elements are added.
