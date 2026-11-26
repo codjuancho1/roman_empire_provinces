@@ -30,5 +30,9 @@ Hasta donde sabemos, esta es la división provincial más precisa disponible act
 • “germania_wetlands”: representación vectorial de las zonas de brezales y zonas pantanosas de Alemania noroccidental y de la zona de la desembocadura del Rin y el Mosa. La fuente de esta capa está indicada en el archivo de bibliografía. 
 
 • “litus_saxonicum”: capa que representa las diferentes localidades y fuertes que formaban parte del sistema defensivo costero conocido como Litus Saxonicum. En el campo "notitia" se indican aquellos lugares nombrados en la Notitia Dignitatum (con valor de "1") y otros lugares fortificados que no se nombran explícitamente en la Notitia pero que formaban parte del sistema defensivo costero (con valor de "2").
+
+• “formula_togatorum”: capa de puntos que representa las *Priscae Coloniae Latinae*, las colonias marítimas romanas, las colonias latinas y los *Socii navales* desde el siglo V a. C. hasta los años 123-121 a. C., fecha de la fundación de Palma y Pollentia. A los posibles *Socii navales* se les asigna el valor «socius_navalis*», mientras que los *Socii navales* confirmados no llevan el símbolo *. «creation_start» y «creation_end» funcionan de la misma manera que los campos correspondientes en las capas «roman_provinces_p» y «roman_provinces_l». Los *Socii navales* tienen períodos de fundación que abarcan más años que las demás ciudades de la capa, ya que suele ser imposible establecer una fecha concreta.
+
+Traducción realizada con la versión gratuita del traductor DeepL.com
     
 Tenemos la idea de actualizar periódicamente este geopackage para ir añadiendo cada vez más aspectos históricos. Los cambios y actualizaciones se explicarán en un log actualizado según se vayan añadiendo más cosas.
