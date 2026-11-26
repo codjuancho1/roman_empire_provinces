@@ -32,4 +32,6 @@ To the best of our knowledge, this is the most accurate provincial division curr
 
 • “litus_saxonicum”: A layer representing the various locations and forts that comprised the coastal defensive system known as the *Litus Saxonicum*. The "notitia" field identifies sites mentioned in the *Notitia Dignitatum* (assigned a value of "1") as well as other fortified locations that are not explicitly named in the *Notitia* but were nonetheless part of the coastal defensive system (assigned a value of "2").
 
+• “formula_togatorum”: A point-layer representing the Priscae Coloniae Latinae, the Roman maritime colonies, the Latin colonies and the *Socii navales* from the 5th century BC to 123-121 BC, date of foundation of Palma and Pollentia. The possible *Socii navales* are given the value "socius_navalis*", while the confirmed *Socii navales* do not have the symbol *. "creation_start" and "creation_end" work in the same way that the same fields in the "roman_provinces_p" and roman_provinces_l". The *Socii navales* have periods of foundation spanning more years than the rest of the cities of the layer, because usually is impossible to establish a specific date.
+
 We intend to periodically update this GeoPackage, incorporating an increasing number of historical features. Changes and updates will be documented in a log, which will be updated as new elements are added.
